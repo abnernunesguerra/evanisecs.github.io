@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -53,8 +54,32 @@
                 border-bottom: 1px solid #666
             }
 
+            input[type="text"],
+            input[type="password"],
+            input[type="email"],
+            select,
+            textarea
+            {
+                width: 100%;
+                float: left;
+                height: 30px;
+                padding: 5px;
+                border: 1px solid #666;
+                margin: 0 0 15px
+            }
 
-
+            
+            input[type="submit"],
+            input[type="reset"],
+            input[type="button"],
+            button,
+            .btn
+            {
+                width: auto;
+                padding: 5px 15px;
+                text-align: center;
+                cursor: pointer
+            }
         </style>
     </head>
     <body>
@@ -186,12 +211,23 @@
 
 
                 <div class="fold">
-                    <div class="title">Lista ordenada:</div>
-                    <ol start="6">
-                        <li>lorem</li>
-                        <li>ipsum</li>
-                        <li>dolor</li>
-                    </ol>
+                    <div class="title">Formulario:</div>
+                    <div style="width: 600px;float: left">
+                         <form action="" method="post">
+                             <label for="nome" >nome</label> <br />
+                         <input type="text" id="nome"  name="nome" value="" /> <br />
+                            
+                            <label for="senha">senha</label> <br />
+                         <input type="password" id="senha" name="senha" value="" /> <br />
+
+                            <label for="email">email</label> <br />
+                            <input type="email" id ="email" name="email" value="" /> <br />
+
+
+                         <input type="submit" name="submit" value="ok" />
+                         <input type="reset" name="reset" value="limpar" />
+                         </form>
+                    </div>
                 </div>
 
 
